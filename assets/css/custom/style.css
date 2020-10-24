@@ -23,155 +23,49 @@
     --color-blue: #2DC8E6;
 }
 
-.color-yellow {
-    color: var(--color-yellow);
-}
-.color-red {
-    color: var(--color-red);
-}
-.color-blue {
-    color: var(--color-blue);
-}
 
-
-html, body {
-    background: var(--color-one);
+body {
+    background: #050505;
 }
-
 header {
-    background: var(--color-three);
+    background: #242424;
 }
-
 hr {
-    background: var(--color-three);
+    background: #242424;
 }
-
 *{
     font-family: 'IranSans';
     transition: background-color .5s;
 }
 
 
-html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-four) var(--color-three);
+html , .search-page {
+    scrollbar-width: Thin;
+    scrollbar-color: #535456 #242424;
 }
-html::-webkit-scrollbar {
+html::-webkit-scrollbar,
+.search-page::-webkit-scrollbar {
     width: 8px;
 }
-html::-webkit-scrollbar-track {
-    background: var(--color-three);
+html::-webkit-scrollbar-track,
+.search-page::-webkit-scrollbar-track {
+    background: #242424;
 }
-html::-webkit-scrollbar-thumb {
-    background-color: var(--color-four);
+html::-webkit-scrollbar-thumb,
+.search-page::-webkit-scrollbar-thumb {
+    background-color: #535456;
     border-radius: 20px;
-    border: 1px solid var(--color-three);
+    border: 1px solid #242424;
 }
 
 
 p, span, a {
     text-decoration: none;
     font-size: 14px;
-    color: var(--color-five);
+    color: #B7B7B7;
 }
 a:hover {
     text-decoration: none;
-}
-
-
-.title-text {
-    font-size: 18px;
-}
-
-.main {
-    margin-top: 61px;
-}
-
-.user-online {
-    margin: 0 20px 0 auto;
-    color: var(--color-five);
-}
-
-.svg-icons {
-    max-height: 20px;
-    fill: var(--color-five);
-}
-
-.search-icon {
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.header-logo {
-    margin-right: 20px;
-}
-.header-logo img{
-    max-height: 45px;
-}
-
-.btn-accont {
-    color: var(--color-yellow);
-    margin-right: 20px;
-    padding: 10px 20px;
-    background: var(--color-two);
-    transition: 0.25s;
-    border-radius: 100px;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-}
-.btn-accont:hover{
-    text-decoration: none;
-    color: var(--color-yellow);
-    box-shadow: 0 10px 10px -10px var(--color-one);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.Login-register-btn {
-    margin-right: 20px;
-    color: var(--color-five);
-    transition: .5s;
-}
-.Login-register-btn:hover {
-    text-decoration: none;
-    color: var(--color-four);
-}
-
-
-.search-page {
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 10000;
-    position: fixed;
-    overflow-x: hidden;
-    transition: .5s ease-in;
-    margin-left: -100%;
-    background: var(--color-two);
-}
-.search-page-content {
-    background: var(--color-two);
-    margin-top: 60px;
-    position: relative;
-    width: 100%;
-    text-align: right;
-    overflow: auto;
-}
-.search-page-open {
-    margin-left: 0;
-}
-.close-search-page{
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
 }
 
 .menu {
@@ -183,7 +77,7 @@ a:hover {
     bottom: 0;
     margin-top: 61px;
     margin-right: -300px;
-    background: var(--color-two);
+    background: #1A1A1A;
     overflow-x: hidden;
     transition: .5s;
 }
@@ -194,21 +88,26 @@ a:hover {
     text-align: right;
     overflow: auto;
 }
-.menu a {
+.menu a{
     padding: 5px;
     text-decoration: none;
     font-size: 16px;
-    color: var(--color-five);
+    color: #B7B7B7;
     display: block;
     transition: 0.3s;
 }
+.menu span{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
 .menu a:hover {
-    color: var(--color-five);
+    color: #B7B7B7;
 }
 .menu-open {
     margin-right: 0;
 }
-
 .hide-overflow {
     overflow: hidden;
 }
@@ -233,7 +132,7 @@ a:hover {
     position: absolute;
     height: 4px;
     width: 100%;
-    background: var(--color-five);
+    background: #B7B7B7;
     border-radius: 9px;
     opacity: 1;
     right: 0;
@@ -272,6 +171,102 @@ a:hover {
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
+}
+
+
+.title-text {
+    font-size: 18px;
+}
+
+.main {
+    margin-top: 61px;
+}
+
+.user-online {
+    margin: 0 20px 0 auto;
+    color: #B7B7B7;
+}
+
+.svg-icons {
+    max-height: 20px;
+    fill: #B7B7B7;
+}
+
+.search-icon {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.header-logo {
+    margin-right: 20px;
+}
+.header-logo img{
+    max-height: 45px;
+}
+
+.btn-accont {
+    color: #F8CB5C;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background: #1A1A1A;
+    transition: 0.25s;
+    border-radius: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn-accont:hover{
+    text-decoration: none;
+    color: #F8CB5C;
+    box-shadow: 0 10px 10px -10px #050505;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.Login-register-btn {
+    margin-right: 20px;
+    color: #B7B7B7;
+    transition: .5s;
+}
+.Login-register-btn:hover {
+    text-decoration: none;
+    color: #535456;
+}
+
+
+.search-page {
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10000;
+    position: fixed;
+    overflow-x: hidden;
+    transition: .5s ease-in;
+    margin-left: -100%;
+    background: #1A1A1A;
+}
+.search-page-content {
+    background: #1A1A1A;
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    overflow: auto;
+}
+.search-page-open {
+    margin-left: 0;
+}
+.close-search-page{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 
@@ -320,20 +315,6 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
-input:checked+.slider {
-    background: url('../../img/svgs/light-toggle.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-input:checked+.slider:before {
-    -webkit-transform: translateX(25px);
-    -ms-transform: translateX(25px);
-    transform: translateX(25px);
-    background: white;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 /* Rounded sliders */
 .slider.round {
     border-radius: 34px;
@@ -347,17 +328,78 @@ input:checked+.slider:before {
     padding: 5px 15px;
     margin: 10px 15px;
     margin-right: 0;
-    background: var(--color-one);
+    background: #050505;
     border-radius: 10px;
-    border: dashed 1px var(--color-five);
+    border: dashed 1px #B7B7B7;
     transition: all .3s;
 }
-
 .latest-search-item:hover {
     z-index: 1000;
-    color: var(--color-five);
-    box-shadow: 0px 5px 10px var(--color-one);
+    color: #B7B7B7;
+    box-shadow: 0px 5px 10px #050505;
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.search-form input {
+    color: #b7b7b7 !important;
+    background: #242424;
+    border-radius: 100px !important;
+    border: none !important;
+    padding: 25px 15px !important;
+}
+.search-form input:focus {
+    background: #242424;
+}
+
+.search-form button {
+    background: #050505;
+    border-radius: 100px !important;
+    border: none !important;
+    padding: 0px 20px !important;
+}
+.search-form button:hover {
+    background: #1A1A1A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.color-yellow {
+    color: #F8CB5C !important;
+}
+.color-red {
+    color: #FF3148 !important;
+}
+.color-blue {
+    color: #2DC8E6 !important;
+}
+
+
+/********** This is for remove outline of all input elements **********/
+button:focus,
+button:active,
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+    box-shadow: 0 0 0 #ddd;
+    outline: none;
 }

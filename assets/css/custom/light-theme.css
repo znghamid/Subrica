@@ -1,0 +1,146 @@
+.theme-dark {
+    --color-p-txt: #ffffff;
+    --color-one: #050505;
+    --color-two: #1A1A1A;
+    --color-three: #242424;
+    --color-four: #535456;
+    --color-five: #B7B7B7;
+    --color-six: #f1f1f1;
+    --color-yellow: #F8CB5C;
+    --color-red: #FF3148;
+    --color-blue: #2DC8E6;
+}
+.theme-light {
+    --color-p-txt: #050505;
+    --color-one: #FFFFFF;
+    --color-two: #e5e5e5;
+    --color-three: #EEEEEE;
+    --color-four: #242424;
+    --color-five: #535456;
+    --color-six: #f1f1f1;
+    --color-yellow: #F8CB5C;
+    --color-red: #FF3148;
+    --color-blue: #2DC8E6;
+}
+
+body {
+    background: #FFFFFF;
+}
+header {
+    background: #EEEEEE;
+}
+hr {
+    background: #EEEEEE;
+}
+
+
+html , .search-page {
+    scrollbar-color: #242424 #EEEEEE;
+}
+html::-webkit-scrollbar-track,
+.search-page::-webkit-scrollbar-track {
+    background: #EEEEEE;
+}
+html::-webkit-scrollbar-thumb,
+.search-page::-webkit-scrollbar-thumb {
+    background-color: #242424;
+    border: 1px solid #EEEEEE;
+}
+
+
+p, span, a {
+    color: #535456;
+}
+
+
+.menu {
+    background: #e5e5e5;
+}
+.menu a {
+    color: #535456;
+}
+.menu a:hover {
+    color: #535456;
+}
+
+
+#menu-icon span {
+    background: #535456;
+}
+
+
+.user-online {
+    color: #535456;
+}
+.svg-icons {
+    fill: #535456;
+}
+
+
+.btn-accont {
+    color: #F8CB5C;
+    background: #e5e5e5;
+}
+.btn-accont:hover{
+    color: #F8CB5C;
+    box-shadow: 0 10px 10px -10px #ffffff;
+}
+
+
+.Login-register-btn {
+    color: #535456;
+}
+.Login-register-btn:hover {
+    text-decoration: none;
+    color: #242424;
+}
+
+
+.search-page {
+    background: #e5e5e5;
+}
+.search-page-content {
+    background: #e5e5e5;
+}
+
+
+input:checked+.slider {
+    background: url('../../img/svgs/light-toggle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input:checked+.slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+    background: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.latest-search-item {
+    background: #ffffff;
+    border: dashed 1px #535456;
+}
+.latest-search-item:hover {
+    color: #535456;
+    box-shadow: 0px 5px 10px #ffffff;
+}
+
+
+.search-form input {
+    color: #535456 !important;
+    background: #EEEEEE;
+}
+.search-form input:focus {
+    background: #EEEEEE;
+}
+
+.search-form button {
+    background: #ffffff;
+}
+.search-form button:hover {
+    background: #e5e5e5;
+}

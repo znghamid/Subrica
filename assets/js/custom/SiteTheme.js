@@ -1,30 +1,27 @@
-// function to set a given theme/color-scheme
-function setTheme(themeName) {
-    localStorage.setItem('SubricaTheme', themeName);
-    document.documentElement.className = themeName;
-}
-
-// function to toggle between light and dark theme
 function toggleTheme() {
-    if (localStorage.getItem('SubricaTheme') === 'theme-dark') {
-        setTheme('theme-light');
+    if (localStorage.getItem('SubricaTheme') === 'dark-theme') {
+        localStorage.setItem('SubricaTheme', 'light-theme');
+        document.getElementById('slider').checked = true;
+        document.getElementById("light-theme").disabled = false;
     } else {
-        setTheme('theme-dark');
+        localStorage.setItem('SubricaTheme', 'dark-theme');
+        document.getElementById('slider').checked = false;
+        document.getElementById("light-theme").disabled = true;
     }
 }
 
-// Immediately invoked function to set the theme on initial load
 (function () {
-    if (localStorage.getItem('SubricaTheme') === 'theme-dark') {
-        setTheme('theme-dark');
-        document.getElementById('slider').checked = false;
-    } 
-    else if(localStorage.getItem('SubricaTheme') === 'theme-light'){
-        setTheme('theme-light');
+    if (localStorage.getItem('SubricaTheme') === 'light-theme') {
+        localStorage.setItem('SubricaTheme', 'light-theme');
         document.getElementById('slider').checked = true;
-    } 
-    else {
-        setTheme('theme-dark');
+        document.getElementById("light-theme").disabled = false;
+    } else if (localStorage.getItem('SubricaTheme') === 'dark-theme'){
+        localStorage.setItem('SubricaTheme', 'dark-theme');
         document.getElementById('slider').checked = false;
+        document.getElementById("light-theme").disabled = true;
+    } else {
+        localStorage.setItem('SubricaTheme', 'dark-theme');
+        document.getElementById('slider').checked = false;
+        document.getElementById("light-theme").disabled = true;
     }
 })();

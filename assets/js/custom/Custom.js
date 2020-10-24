@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
     jQuery(function(){
         var minimized_elements = $('p.minimize');
-        var minimize_character_count = 80;    
+        var minimize_character_count = 110;    
 
         minimized_elements.each(function(){    
             var t = $(this).text();        
