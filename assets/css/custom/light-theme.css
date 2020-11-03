@@ -144,3 +144,33 @@ input:checked+.slider:before {
 .search-form button:hover {
     background: #e5e5e5;
 }
+
+
+
+
+
+.ads {
+    border: dashed 2px #535456;
+}
+.ads div {
+    color: #535456;
+}
+
+
+.side-content {
+    background: #e5e5e5;
+}
+
+.side-content .tab-pane .tab-item {
+    background: #EEEEEE;
+}
+
+.top-ten-container a {
+    background: #EEEEEE;
+    border: dashed 1px #535456;
+}
+
+
+.color-text {
+    color: #535456 !important;
+}

@@ -4,31 +4,24 @@
             .a {
                 fill: #26a0da;
             }
-
             .b {
                 fill: #d4d5db;
             }
-
             .c {
                 fill: #ebeff2;
             }
-
             .d {
                 fill: #647989;
             }
-
             .e {
                 fill: #e56354;
             }
-
             .f {
                 fill: #4ebd9e;
             }
-
             .g {
                 fill: #fad362;
             }
-
             .h {
                 fill: #304859;
             }

@@ -178,7 +178,7 @@ a:hover {
     font-size: 18px;
 }
 
-.main {
+.top-container {
     margin-top: 61px;
 }
 
@@ -364,6 +364,111 @@ a:hover {
 }
 
 
+.image-cover {
+    cursor: pointer;
+    position: relative;
+}
+.image-cover img{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+.overlay-image-hover {
+    border-radius: 10px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(45,200,230);
+    background: linear-gradient(0deg, rgba(45,200,230,1) 0%, rgba(45,200,230,0) 100%);
+}
+.overlay-image-hover .icon-play {
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.overlay-image-hover .view {
+    transition: .5s ease;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+.overlay-image-hover .like {
+    transition: .5s ease;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+.overlay-image-hover span {
+    color: #fff;
+}
+.card-cover a {
+    transition: .5s;
+}
+.card-cover:hover .overlay-image-hover {
+    opacity: 1;
+}
+
+.ads {
+    position: relative;
+    border-radius: 10px;
+    border: dashed 2px #B7B7B7;
+}
+.ads div {
+    color: #b7b7b7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.side-content {
+    background: #1A1A1A;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.side-content .tab-pane .tab-item {
+    background: #242424;
+    border-radius: 10px;
+}
+
+.side-content .tab-pane .tab-item img {
+    border-radius: 10px;
+}
+
+.side-content .tab-pane .tab-item p {
+    font-size: 13px;
+}
+
+.top-ten-container a {
+    color: #fff !important;
+    background: #242424;
+    margin: 0px 7px;
+    border-radius: 10px !important;
+    border: dashed 1px #B7B7B7;
+}
+.top-ten-container .active p {
+    color: #fff !important;
+}
+
+.top-ten-container .active {
+    background: #2DC8E6 !important;
+    margin: 0px 7px;
+    border-radius: 10px;
+    border: solid 1px #2DC8E6;
+}
+
+.sticky-top {
+    top: 71px !important;
+}
 
 
 
@@ -371,9 +476,72 @@ a:hover {
 
 
 
+/* This class can be replaced using options */
+.hover-in{
+	transition: .5s ease-out;
+}
+.hover-out{
+	transition: .5s ease-in;
+}
 
 
 
+/********** This is for Bootstrap 5 Grid **********/
+.w-7{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 14.28%;
+    flex: 0 0 14.28%;
+    max-width: 14.28%;
+    padding: 0;
+}
+@media (min-width: 576px){
+    .w-sm-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 14.28%;
+        flex: 0 0 14.28%;
+        max-width: 14.28%;
+        padding: 0;
+    }
+}
+@media (min-width: 768px){
+    .w-md-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 14.28%;
+        flex: 0 0 14.28%;
+        max-width: 14.28%;
+        padding: 0;
+    }
+}
+@media (min-width: 992px){
+    .w-lg-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 14.28%;
+        flex: 0 0 14.28%;
+        max-width: 14.28%;
+        padding: 0;
+    }
+}
+@media (min-width: 1200px){
+    .w-xl-7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 14.28%;
+        flex: 0 0 14.28%;
+        max-width: 14.28%;
+        padding: 0;
+    }
+}
+
+
+.site-name-top {
+    font-size: 26px;
+}
+.site-name-top-2 {
+    font-size: 16px;
+}
+
+.color-text {
+    color: #EEEEEE !important;
+}
 .color-yellow {
     color: #F8CB5C !important;
 }
@@ -382,6 +550,9 @@ a:hover {
 }
 .color-blue {
     color: #2DC8E6 !important;
+}
+.color-purple {
+    color: #6B82E9 !important;
 }
 
 
