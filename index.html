@@ -11,13 +11,13 @@
     <!-- Bootstrap rtl -->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-rtl.css">
 
+    <!-- Custom Scrollbar Style -->
+    <link rel="stylesheet" href="assets/css/scrollbar/jquery.mCustomScrollbar.min.css">
+
     <!-- Custom style -->
     <link rel="stylesheet" href="assets/css/custom/style.css">
     <link rel="stylesheet" href="assets/css/custom/light-theme.css" id="light-theme">
     <link rel="stylesheet" href="assets/css/custom/IranSansFont.css">
-
-    <!-- Custom Scrollbar Style -->
-    <link rel="stylesheet" href="assets/css/scrollbar/jquery.mCustomScrollbar.min.css">
 
     <!-- Aos Style -->
     <link rel="stylesheet" href="assets/css/aos/aos.css">
@@ -86,7 +86,7 @@
     <!-- Header End -->
 
     <!-- Menu Start -->
-    <div id="Menu" class="menu custom-scroll" data-mcs-theme="dark">
+    <div id="Menu" class="menu scrollbar">
 
         <!-- Menu Content here -->
         <div class="menu-content">
@@ -148,7 +148,7 @@
                 </svg>
                 <!-- SVG End -->
                 &nbsp;
-                آموزش دانلود، تغییر زیر نویس و ...
+                آموزش دانلود، تغییر زیر نویس ...
             </a>
             <a href="#">
                 <!-- SVG Start -->
@@ -1182,24 +1182,18 @@
         <!-- First suggestion container End -->
 
         <!-- Ad Header Start -->
-        <section class="ads mt-5" style="height: 150px;">
-            <div>
-                محل قرار گیری تبلیغات (1140x150)
-            </div>
-            <!-- <img class="img-fluid" src="" alt="تبلیغات"> -->
+        <section class="ads mt-md-5">
+            <img class="img-fluid" src="assets/img/covers/ads1140x250.png" alt="تبلیغات">
         </section>
         <!-- Ad Header End -->
 
         <!-- Ads Header and second suggestion Start -->
         <section class="mt-5">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between align-items-center">
                 <div class="col-lg-4 col-md-4 mb-3">
                     <!-- Ad Start -->
-                    <section class="ads" style="min-height: 350px;">
-                        <div>
-                            محل قرار گیری تبلیغات (350x350)
-                        </div>
-                        <!-- <img class="img-fluid" src="" alt="تبلیغات"> -->
+                    <section class="ads text-center">
+                        <img class="img-fluid" src="assets/img/covers/ads350x350.png" alt="تبلیغات">
                     </section>
                     <!-- Ad End -->
                 </div>
@@ -1212,7 +1206,7 @@
                                 <a href="#">
                                     <div class="image-cover">
                                         <!-- 300pxx300px -->
-                                        <img src="assets/img/covers/300x300.jpg" alt="توضیحات عکس">
+                                        <img class="img-fluid" src="assets/img/covers/300x300.jpg" alt="توضیحات عکس">
                                         <div class="overlay-image-hover">
                                             <div class="icon-play">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
@@ -1244,7 +1238,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="mt-2 text-justify">موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس
+                                    <p class="mt-2">موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس
                                         فارسی و انگلیسی</p>
                                 </a>
                             </div>
@@ -1254,11 +1248,8 @@
                 </div>
                 <div class="col-lg-4 col-md-4 mb-3">
                     <!-- Ad Start -->
-                    <section class="ads" style="height: 350px; max-height: 100%;">
-                        <div>
-                            محل قرار گیری تبلیغات (350x350)
-                        </div>
-                        <!-- <img class="img-fluid" src="" alt="تبلیغات"> -->
+                    <section class="ads text-center">
+                        <img class="img-fluid" src="assets/img/covers/ads350x350.png" alt="تبلیغات">
                     </section>
                     <!-- Ad End -->
                 </div>
@@ -1272,223 +1263,446 @@
     <!-- Main Section for content Start -->
     <div class="container">
         <div class="row py-3">
-            <div class="col-4 order-2">
-                <div class="nav flex-column">
-                    <div class="side-content">
-                        <p><i class="far fa-eye"></i> مطالب پر بازدید سایت</p>
-                        <hr>
-                        <ul class="nav nav-pills justify-content-center p-0 top-ten-container" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link px-3 active" id="top-week" data-toggle="pill" href="#TopWeek">
-                                    <!-- <i class="far fa-eye sh"></i> -->
-                                    <p class="m-0">هفته</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-3" id="top-month" data-toggle="pill" href="#TopMonth">
-                                    <!-- <i class="far fa-eye"></i> -->
-                                    <p class="m-0">ماه</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-3" id="top-year" data-toggle="pill" href="#TopYear" >
-                                    <!-- <i class="far fa-eye"></i> -->
-                                    <p class="m-0">سال</p>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content top-ten" id="pills-tabContent">
-                            <div class="tab-pane active" id="TopWeek">
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
+            <div class="col-lg-4 order-2">
+                <div class="row">
+
+                    <!-- Most viewed video Start -->
+                    <div class="col-md-6 col-lg-12">
+                        <div class="side-content mb-4">
+                            <p><i class="far fa-eye"></i> مطالب پر بازدید سایت</p>
+                            <hr>
+                            <ul class="nav nav-pills justify-content-center p-0 top-ten-container" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link text-center active" id="top-week" data-toggle="pill" href="#TopWeek">
+                                        <p class="m-0 far fa-eye sh"></p>
+                                        <p class="m-0">هفته</p>
                                     </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center" id="top-month" data-toggle="pill" href="#TopMonth">
+                                        <p class="m-0 far fa-eye"></p>
+                                        <p class="m-0">ماه</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-center" id="top-year" data-toggle="pill" href="#TopYear" >
+                                        <p class="m-0 far fa-eye"></p>
+                                        <p class="m-0">سال</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content top-ten mt-3" id="pills-tabContent">
+                                <div class="div-content tab-pane active" id="TopWeek">
+                                    <div class="tab-item p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                <div class="div-content tab-pane fade" id="TopMonth" >
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                <div class="div-content tab-pane fade" id="TopYear">
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="TopMonth" >
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                        </a>
+                                    </div>
+                                    <div class="tab-item p-2 mt-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="TopYear">
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="tab-item p-2 mt-3"> 
-                                    <a class="" href="#">
-                                        <div class="media align-items-center">
-                                            <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
-                                            <div class="media-body pr-2 text-justif">
-                                                <p class="minimize m-0"
-                                                    title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
-                                                    ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
-                                            </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Most viewed video End -->
+
+                    <!-- Latest change Start -->
+                    <div class="col-md-6 col-lg-12">
+                        <div class="side-content mb-4">
+                            <p class="color-purple text-title-3 m-0">آخرین تغییرات</p>
+                            <div class="bg-purple mb-3 mt-2 rounded-lg" style="height: 1px; width: 90px;"></div>
+                            <div class="latest-change scrollbar" dir="ltr">
+                                <div class="div-content" dir="rtl">
+                                    <div class="p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="p-2 mb-3"> 
+                                        <a class="" href="#">
+                                            <div class="media align-items-center">
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/image1.png" alt="">
+                                                <div class="media-body pr-2 text-justif">
+                                                    <p class="m-0"
+                                                        title="موزیک ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی">موزیک
+                                                        ویدیو Get Right از Jennifer Lopez با زیرنویس فارسی و انگلیسی</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Latest change End -->
+
+                    <!-- Ad Start -->
+                    <div class="col-md-6 col-lg-12">
+                        <section class="ads mb-4 text-center">
+                            <img class="img-fluid" src="assets/img/covers/ads350x350.png" alt="تبلیغات">
+                        </section>
+                    </div>
+                    <!-- Ad End -->
+
+                    <!-- Singer menu Start -->
+                    <div class="col-md-6 col-lg-12">
+                        <div class="side-content mb-4">
+                            <p class="color-white-black text-title-3 m-0">خواننده ها</p>
+                            <div class="bg-white-black mb-3 mt-2 rounded-lg" style="height: 1px; width: 60px;"></div>
+                            <div class="scrollbar singer" dir="ltr">
+                                <div class="div-category" dir="rtl">
+                                    <div class="singer-card"> 
+                                        <a href="#">
+                                            <div class="media align-items-center">
+                                                <p class="m-0 pl-2 text-title-0 text-black-font">01</p>
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/covers/BillieEilish.jpg" alt="">
+                                                <div class="media-body pr-2">
+                                                    <p class="mb-1" title="Billie Eilish">Billie Eilish</p>
+                                                    <p class="m-0" title="Billie Eilish">بیلی آیلیش</p>
+                                                </div>
+                                                <div class="align-self-end">
+                                                    <p class="mb-1">923</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr>
+                                    </div>
+                                    <div class="singer-card"> 
+                                        <a href="#">
+                                            <div class="media align-items-center">
+                                                <p class="m-0 pl-2 text-title-0 text-black-font">02</p>
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/covers/BillieEilish.jpg" alt="">
+                                                <div class="media-body pr-2">
+                                                    <p class="mb-1" title="Billie Eilish">Billie Eilish</p>
+                                                    <p class="m-0" title="Billie Eilish">بیلی آیلیش</p>
+                                                </div>
+                                                <div class="align-self-end">
+                                                    <p class="mb-1">923</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr>
+                                    </div>
+                                    <div class="singer-card"> 
+                                        <a href="#">
+                                            <div class="media align-items-center">
+                                                <p class="m-0 pl-2 text-title-0 text-black-font">03</p>
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/covers/BillieEilish.jpg" alt="">
+                                                <div class="media-body pr-2">
+                                                    <p class="mb-1" title="Billie Eilish">Billie Eilish</p>
+                                                    <p class="m-0" title="Billie Eilish">بیلی آیلیش</p>
+                                                </div>
+                                                <div class="align-self-end">
+                                                    <p class="mb-1">923</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr>
+                                    </div>
+                                    <div class="singer-card"> 
+                                        <a href="#">
+                                            <div class="media align-items-center">
+                                                <p class="m-0 pl-2 text-title-0 text-black-font">04</p>
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/covers/BillieEilish.jpg" alt="">
+                                                <div class="media-body pr-2">
+                                                    <p class="mb-1" title="Billie Eilish">Billie Eilish</p>
+                                                    <p class="m-0" title="Billie Eilish">بیلی آیلیش</p>
+                                                </div>
+                                                <div class="align-self-end">
+                                                    <p class="mb-1">923</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr>
+                                    </div>
+                                    <div class="singer-card"> 
+                                        <a href="#">
+                                            <div class="media align-items-center">
+                                                <p class="m-0 pl-2 text-title-0 text-black-font">05</p>
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/covers/BillieEilish.jpg" alt="">
+                                                <div class="media-body pr-2">
+                                                    <p class="mb-1" title="Billie Eilish">Billie Eilish</p>
+                                                    <p class="m-0" title="Billie Eilish">بیلی آیلیش</p>
+                                                </div>
+                                                <div class="align-self-end">
+                                                    <p class="mb-1">923</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr>
+                                    </div>
+                                    <div class="singer-card"> 
+                                        <a href="#">
+                                            <div class="media align-items-center">
+                                                <p class="m-0 pl-2 text-title-0 text-black-font">06</p>
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/covers/BillieEilish.jpg" alt="">
+                                                <div class="media-body pr-2">
+                                                    <p class="mb-1" title="Billie Eilish">Billie Eilish</p>
+                                                    <p class="m-0" title="Billie Eilish">بیلی آیلیش</p>
+                                                </div>
+                                                <div class="align-self-end">
+                                                    <p class="mb-1">923</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr>
+                                    </div>
+                                    <div class="singer-card"> 
+                                        <a href="#">
+                                            <div class="media align-items-center">
+                                                <p class="m-0 pl-2 text-title-0 text-black-font">07</p>
+                                                <img class="img-fluid" style="height: 60px;" src="assets/img/covers/BillieEilish.jpg" alt="">
+                                                <div class="media-body pr-2">
+                                                    <p class="mb-1" title="Billie Eilish">Billie Eilish</p>
+                                                    <p class="m-0" title="Billie Eilish">بیلی آیلیش</p>
+                                                </div>
+                                                <div class="align-self-end">
+                                                    <p class="mb-1">923</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Singer menu End -->
                 </div>
             </div>
-            <div class="col">
+            <div class="col order-lg-1">
                 <h1>Main Area</h1>
                 <p>Chambray sustainable roof party. Shoreditch vegan artisan Helvetica. Tattooed Codeply <br/> Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
                 <p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch <br/>vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel<br/> Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
@@ -1521,19 +1735,6 @@
     <script>
         $(".main-logo").hover3d({
             selector: ".logo-container",
-        });
-    </script>
-
-    <!-- Scrollbar js -->
-    <script src="assets/js/scrollbar/jquery.mCustomScrollbar.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(window).on('load', function () {
-                $(".menu").mCustomScrollbar({
-                    axis: "y",
-                    theme: "dark",
-                });
-            });
         });
     </script>
 
@@ -1589,6 +1790,16 @@
         }
 
         document.addEventListener('scroll', onScroll);
+    </script>
+
+
+    <script src="assets/js/scrollbar/custom.jquery.min.js"></script>
+    <!-- Scrollbar js -->
+    <script src="assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".scrollbar").mCustomScrollbar();
+        });
     </script>
 </body>
 

@@ -35,7 +35,7 @@ hr {
 
 
 html , .search-page {
-    scrollbar-color: #242424 #EEEEEE;
+    scrollbar-color: #585858 #EEEEEE;
 }
 html::-webkit-scrollbar-track,
 .search-page::-webkit-scrollbar-track {
@@ -43,7 +43,7 @@ html::-webkit-scrollbar-track,
 }
 html::-webkit-scrollbar-thumb,
 .search-page::-webkit-scrollbar-thumb {
-    background-color: #242424;
+    background-color: #585858;
     border: 1px solid #EEEEEE;
 }
 
@@ -146,22 +146,11 @@ input:checked+.slider:before {
 }
 
 
-
-
-
-.ads {
-    border: dashed 2px #535456;
-}
-.ads div {
-    color: #535456;
-}
-
-
 .side-content {
     background: #e5e5e5;
 }
 
-.side-content .tab-pane .tab-item {
+.div-content > div{
     background: #EEEEEE;
 }
 
@@ -173,4 +162,12 @@ input:checked+.slider:before {
 
 .color-text {
     color: #535456 !important;
+}
+
+.color-white-black {
+    color: #050505 !important;
+}
+
+.bg-white-black {
+    background: #050505 !important;
 }

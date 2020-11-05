@@ -33,6 +33,9 @@ header {
 hr {
     background: #242424;
 }
+img {
+    border-radius: 10px;
+}
 *{
     font-family: 'IranSans';
     transition: background-color .5s;
@@ -78,11 +81,10 @@ a:hover {
     margin-top: 61px;
     margin-right: -300px;
     background: #1A1A1A;
-    overflow-x: hidden;
     transition: .5s;
 }
 .menu-content {
-    margin-right: 15px;
+    margin-right: 0px;
     position: relative;
     width: 100%;
     text-align: right;
@@ -90,6 +92,7 @@ a:hover {
 }
 .menu a{
     padding: 5px;
+    padding-right: 0px;
     text-decoration: none;
     font-size: 16px;
     color: #B7B7B7;
@@ -246,10 +249,10 @@ a:hover {
     bottom: 0;
     z-index: 10000;
     position: fixed;
-    overflow-x: hidden;
     transition: .5s ease-in;
     margin-left: -100%;
     background: #1A1A1A;
+    overflow: auto;
 }
 .search-page-content {
     background: #1A1A1A;
@@ -257,7 +260,6 @@ a:hover {
     position: relative;
     width: 100%;
     text-align: right;
-    overflow: auto;
 }
 .search-page-open {
     margin-left: 0;
@@ -370,7 +372,7 @@ a:hover {
 }
 .image-cover img{
     border-radius: 10px;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     transition: .5s ease;
 }
@@ -417,8 +419,6 @@ a:hover {
 
 .ads {
     position: relative;
-    border-radius: 10px;
-    border: dashed 2px #B7B7B7;
 }
 .ads div {
     color: #b7b7b7;
@@ -435,12 +435,7 @@ a:hover {
     border-radius: 10px;
 }
 
-.side-content .tab-pane .tab-item {
-    background: #242424;
-    border-radius: 10px;
-}
-
-.side-content .tab-pane .tab-item img {
+.div-content img {
     border-radius: 10px;
 }
 
@@ -454,6 +449,7 @@ a:hover {
     margin: 0px 7px;
     border-radius: 10px !important;
     border: dashed 1px #B7B7B7;
+    width: 70px;
 }
 .top-ten-container .active p {
     color: #fff !important;
@@ -466,10 +462,33 @@ a:hover {
     border: solid 1px #2DC8E6;
 }
 
+
+.div-content > div{
+    background: #242424;
+    border-radius: 10px !important;
+}
+
+.most-view .tab-item{
+    background: #242424;
+    border-radius: 10px !important;
+}
+
+.most-view {
+    height: 260px;
+}
+
 .sticky-top {
     top: 71px !important;
 }
 
+
+
+.singer {
+    height: 260px;
+}
+.latest-change {
+    height: 260px;
+}
 
 
 
@@ -554,6 +573,29 @@ a:hover {
 .color-purple {
     color: #6B82E9 !important;
 }
+.color-white-black {
+    color: #fff !important;
+}
+
+
+.bg-text {
+    background: #EEEEEE !important;
+}
+.bg-yellow {
+    background: #F8CB5C !important;
+}
+.bg-red {
+    background: #FF3148 !important;
+}
+.bg-blue {
+    background: #2DC8E6 !important;
+}
+.bg-purple {
+    background: #6B82E9 !important;
+}
+.bg-white-black {
+    background: #fff !important;
+}
 
 
 /********** This is for remove outline of all input elements **********/
@@ -573,4 +615,88 @@ input[type=number]:focus,
 [contenteditable].form-control:focus {
     box-shadow: 0 0 0 #ddd;
     outline: none;
+}
+
+
+
+/********** This is for font-family and font-size **********/
+.text-ultra-light-font{
+    font-family: 'IranSans';
+    font-style: normal;
+    font-weight: 200;
+}
+.text-light-font{
+    font-family: 'IranSans';
+    font-style: normal;
+    font-weight: 300;
+}
+.text-medium-font{
+    font-family: 'IranSans';
+    font-style: normal;
+    font-weight: 500;
+}
+.text-bold-font{
+    font-family: 'IranSans';
+    font-style: normal;
+    font-weight: bold;
+}
+.text-black-font{
+    font-family: 'IranSans';
+    font-style: normal;
+    font-weight: 900;
+}
+.text-title-0{
+    /* 32px */
+    font-size: 2rem;
+}
+.text-title-1{
+    /* 26px */
+    font-size: 1.625rem;
+}
+.text-title-2{
+    /* 22px */
+    font-size: 1.375rem;
+}
+.text-title-3{
+    /* 18px */
+    font-size: 1.125rem;
+}
+.text-title-4{
+    /* 16px */
+    font-size: 1rem;
+}
+.text-title-5{
+    /* 14px */
+    font-size: 0.875rem;
+}
+.text-title-6{
+    /* 12px */
+    font-size: 0.75rem;
+}
+.text-title-7{
+    /* 10px */
+    font-size: 0.625rem;
+}
+.text-title-8{
+    /* 8px */
+    font-size: 0.5rem;
+}
+
+.scrollbar .mCSB_inside > .mCSB_container {
+    margin-right: 15px;
+}
+
+.scrollbar .mCSB_scrollTools {
+    width: 10px;
+}
+
+.scrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #535456 !important;
+    width: 3px;
+}
+
+
+.scrollbar .mCSB_scrollTools .mCSB_draggerRail{
+    background: #242424 !important;
+    width: 1px;
 }
