@@ -6,7 +6,7 @@
     --color-four: #535456;
     --color-five: #B7B7B7;
     --color-six: #f1f1f1;
-    --color-yellow: #F8CB5C;
+    --color-yellow: #F3BB03;
     --color-red: #FF3148;
     --color-blue: #2DC8E6;
 }
@@ -18,7 +18,7 @@
     --color-four: #242424;
     --color-five: #535456;
     --color-six: #f1f1f1;
-    --color-yellow: #F8CB5C;
+    --color-yellow: #F3BB03;
     --color-red: #FF3148;
     --color-blue: #2DC8E6;
 }
@@ -78,11 +78,11 @@ p, span, a {
 
 
 .btn-accont {
-    color: #F8CB5C;
+    color: #F3BB03;
     background: #e5e5e5;
 }
 .btn-accont:hover{
-    color: #F8CB5C;
+    color: #F3BB03;
     box-shadow: 0 10px 10px -10px #ffffff;
 }
 
@@ -160,6 +160,16 @@ input:checked+.slider:before {
 }
 
 
+.archive-content {
+    background: #e5e5e5;
+}
+
+.archive-content .overlay-image {
+    background: rgb(229,229,229);
+    background: linear-gradient(0deg, rgba(229,229,229,1) 0%, rgba(229,229,229,0) 100%);
+}
+
+
 .color-text {
     color: #535456 !important;
 }
@@ -170,4 +180,39 @@ input:checked+.slider:before {
 
 .bg-white-black {
     background: #050505 !important;
+}
+
+.footer {
+    background: #EEEEEE;
+}
+
+.footer-bottom {
+    background: #e5e5e5;
+}
+
+.tag {
+    background: #fafafa;
+    color: #777777;
+}
+
+.tag:hover {
+    color: #535456;
+    box-shadow: 0px 5px 10px #f6f6f6;
+}
+
+
+
+
+
+#BackToTopButton {
+    background: #e5e5e5;
+}
+#BackToTopButton::after {
+    color: #535456;
+}
+#BackToTopButton:hover {
+    background-color: #999;
+}
+#BackToTopButton:active {
+    background-color: #999999;
 }

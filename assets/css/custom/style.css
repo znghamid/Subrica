@@ -57,7 +57,6 @@ html::-webkit-scrollbar-track,
 html::-webkit-scrollbar-thumb,
 .search-page::-webkit-scrollbar-thumb {
     background-color: #535456;
-    border-radius: 20px;
     border: 1px solid #242424;
 }
 
@@ -387,6 +386,17 @@ a:hover {
     background: rgb(45,200,230);
     background: linear-gradient(0deg, rgba(45,200,230,1) 0%, rgba(45,200,230,0) 100%);
 }
+.overlay-image-hover-2 {
+    border-radius: 10px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(5,5,5);
+    background: linear-gradient(0deg, rgba(5,5,5,0.5046393557422969) 0%, rgba(5,5,5,0.5018382352941176) 100%);
+}
 .overlay-image-hover .icon-play {
     transition: .5s ease;
     position: absolute;
@@ -433,6 +443,23 @@ a:hover {
     background: #1A1A1A;
     padding: 15px;
     border-radius: 10px;
+}
+
+.archive-content {
+    transition: .5s;
+    background: #1A1A1A;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.archive-content .overlay-image {
+    transition: .5s;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(26,26,26);
+    background: linear-gradient(0deg, rgba(26,26,26,1) 0%, rgba(26,26,26,0) 100%);
 }
 
 .div-content img {
@@ -484,10 +511,52 @@ a:hover {
 
 
 .singer {
-    height: 260px;
+    max-height: 260px;
+}
+
+.category {
+    max-height: 260px;
 }
 .latest-change {
     height: 260px;
+}
+
+.swiper-pagination-bullet {
+    background: #535456 !important;
+}
+
+.swiper-button-next::after {
+    color: #535456 !important;
+}
+
+.swiper-button-prev::after {
+    color: #535456 !important;
+}
+
+.swiper-container {
+    direction: rtl !important;
+}
+
+.footer {
+    background: #242424;
+}
+
+.footer-bottom {
+    background: #1A1A1A;
+}
+
+.tag {
+    position: relative;
+    transition: all .5s;
+    padding: 5px 10px;
+    border-radius: 100px;
+    background: #1A1A1A;
+    color: #535456;
+}
+
+.tag:hover {
+    color: #535456;
+    box-shadow: 0px 5px 10px #1A1A1A;
 }
 
 
@@ -562,7 +631,7 @@ a:hover {
     color: #EEEEEE !important;
 }
 .color-yellow {
-    color: #F8CB5C !important;
+    color: #F3BB03 !important;
 }
 .color-red {
     color: #FF3148 !important;
@@ -582,7 +651,7 @@ a:hover {
     background: #EEEEEE !important;
 }
 .bg-yellow {
-    background: #F8CB5C !important;
+    background: #F3BB03 !important;
 }
 .bg-red {
     background: #FF3148 !important;
@@ -695,8 +764,50 @@ input[type=number]:focus,
     width: 3px;
 }
 
-
 .scrollbar .mCSB_scrollTools .mCSB_draggerRail{
     background: #242424 !important;
     width: 1px;
+}
+
+.navigation a, .navigation i {
+    font-size: 16px;
+    color: #535456;
+}
+
+
+
+#BackToTopButton {
+    display: inline-block;
+    background: #1A1A1A;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#BackToTopButton::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f106";
+    font-size: 2em;
+    line-height: 45px;
+    color: #747474;
+}
+#BackToTopButton:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#BackToTopButton:active {
+    background-color: #555;
+}
+#BackToTopButton.show {
+    opacity: 1;
+    visibility: visible;
 }
