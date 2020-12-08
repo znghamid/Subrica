@@ -182,6 +182,14 @@ input:checked+.slider:before {
     background: #050505 !important;
 }
 
+.bg-dark {
+    background: #e5e5e5 !important;
+}
+
+.bg-dark2 {
+    background: #eeeeee !important;
+}
+
 .footer {
     background: #EEEEEE;
 }
@@ -215,4 +223,26 @@ input:checked+.slider:before {
 }
 #BackToTopButton:active {
     background-color: #999999;
+}
+
+#loadMoreBtn.disable {
+    color: #444444;
+    background: none !important;
+    pointer-events: none !important;
+}
+
+#preloader {
+    background: #fff !important;
+}
+
+
+/* Login and Registe styles */
+.split.left {
+    left: 0;
+    background-color: #eeeeee;
+}
+
+.split.right {
+    right: 0;
+    background-color: #e5e5e5;
 }
