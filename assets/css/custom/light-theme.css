@@ -47,8 +47,33 @@ html::-webkit-scrollbar-thumb,
     border: 1px solid #EEEEEE;
 }
 
+.scrollbar {
+    scrollbar-width: Thin;
+    scrollbar-color: #B7B7B7 #e5e5e5;
+}
+.scrollbar::-webkit-scrollbar-track {
+    background: #e5e5e5;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #B7B7B7;
+    border: 1px solid #e5e5e5;
+}
 
-p, span, a {
+.scrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #B7B7B7 !important;
+}
+
+.song-info-content .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #F3BB03 !important;
+}
+
+.song-lyric-content .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #FF3148 !important;
+}
+
+
+
+p, a, h1, h2, h3, h4, h5, h6, span, li, label {
     color: #535456;
 }
 
@@ -245,4 +270,94 @@ input:checked+.slider:before {
 .split.right {
     right: 0;
     background-color: #e5e5e5;
+}
+
+
+.plyr__menu__container {
+    background-color: #eeeeee;
+}
+
+.plyr__control:hover span{
+    color: #fff !important;
+}
+
+
+.Download-links {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23EEEEEEFF' stroke-width='5' stroke-dasharray='6%2c6' stroke-dashoffset='20' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+
+.Download-links .links {
+    background-color: #eeeeee;
+}
+
+.Download-links .links:hover {
+    background-color: #2DC8E6;
+    color: #fff;
+}
+
+
+
+#CommentsModalReply textarea:focus {
+    background: #eeeeee !important;
+}
+#CommentsModalReply input:focus {
+    background: #eeeeee !important;
+}
+
+#CommentsModalReply textarea {
+    color: #535456;
+}
+#CommentsModalReply input {
+    color: #535456;
+}
+
+.song-info-content {
+    height: 150px;
+    color: #535456;
+}
+
+.song-lyric-content {
+    height: 430px;
+    color: #535456;
+}
+
+
+
+
+
+
+.song-comments {
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.song-comments input,
+.song-comments textarea {
+    background-color: #eeeeee;
+    color: #242424;
+}
+
+.song-comments .item{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23EEEEEEFF' stroke-width='5' stroke-dasharray='6%2c6' stroke-dashoffset='20' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+
+
+
+
+
+.pagination .page-item a {
+    color: #a7a7a7;
+}
+
+.pagination .page-item span {
+    color: #a7a7a7;
+}
+
+.pagination .page-item.active a {
+    color: #252525;
+}
+
+.pagination .page-item.disabled a {
+    color: #a7a7a7;
 }

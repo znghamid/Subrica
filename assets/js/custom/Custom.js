@@ -190,6 +190,58 @@ $(document).ready(function(){
             prevEl: '.swiper-button-prev',
         }
     });
+    var swiper = new Swiper('.post-suggestion', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 9000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            540: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            }
+        },
+    });
+    var swiper = new Swiper('.translator-suggestion', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 7000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            540: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            }
+        },
+    });
     // Swiper sliders End
 
     // Load more function Start
@@ -205,4 +257,60 @@ $(document).ready(function(){
         });
     });
     // Load more function End
+
+    // Auto height textaria
+    try {
+        var textarea = document.querySelector('textarea');
+
+        textarea.addEventListener('keydown', autosize);
+                    
+        function autosize(){
+            var el = this;
+            setTimeout(function(){
+                el.style.cssText = 'height:auto; padding:20px';
+                // for box-sizing other than "content-box" use:
+                // el.style.cssText = '-moz-box-sizing:content-box';
+                el.style.cssText = 'height:' + el.scrollHeight + 'px';
+            },0);
+        }
+    } catch (error) {
+        // 
+    }
 });
+
+
+
+$(document).ready(function () {
+    // Open reply comments modal
+    $('#CommentsModalReply').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var id = button.data('id');
+        var name = button.data('name');
+        var modal = $(this);
+        modal.find('#exampleModalLabel').text('پاسخ به ' + name);
+    })
+    
+    $('#DownloadDescriptionModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var description = button.data('description');
+        var modal = $(this);
+        modal.find('#DownloadDescriptionModalLabel').text(description);
+    })
+
+
+    $('#share-to').on('click', function() {
+        $("#copyToClipboard").text("کپی آدرس صفحه");
+    })
+
+    var $temp = $("<input>");
+    var $url = $(location).attr('href');
+
+    $('#copyToClipboard').on('click', function() {
+        $("body").append($temp);
+        $temp.val($url).focus().select();
+        document.execCommand("copy");
+        $temp.remove();
+        $("#copyToClipboard").text("آدرس صفحه کپی شد");
+    })
+});
+
