@@ -118,6 +118,10 @@ $(document).ready(function(){
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.second-suggestion-left',
+            prevEl: '.second-suggestion-right',
         }
     });
     var swiper = new Swiper('.vip-post-swiper', {
@@ -216,6 +220,28 @@ $(document).ready(function(){
             }
         },
     });
+    var swiper = new Swiper('.more-swiper-4-slide', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            540: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            }
+        },
+    });
     var swiper = new Swiper('.translator-suggestion', {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -247,6 +273,10 @@ $(document).ready(function(){
     // Load more function Start
     $(function () {
         $(".main-content-card").slice(0, 6).show();
+        if ($(".main-content-card:hidden").length == 0) {
+            $("#loadMoreBtn").text("چیزی برای نمایش وجود ندارد");
+            $("#loadMoreBtn").addClass("disable");
+        }
         $("#loadMoreBtn").on('click', function (e) {
             e.preventDefault();
             $(".main-content-card:hidden").slice(0, 3).slideDown();
@@ -279,7 +309,7 @@ $(document).ready(function(){
 });
 
 
-
+// Modals
 $(document).ready(function () {
     // Open reply comments modal
     $('#CommentsModalReply').on('show.bs.modal', function (event) {
@@ -295,6 +325,20 @@ $(document).ready(function () {
         var description = button.data('description');
         var modal = $(this);
         modal.find('#DownloadDescriptionModalLabel').text(description);
+    })
+
+    $('#ShowImageADS').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var imgUrl = button.data('img');
+        var modal = $(this);
+        modal.find('#ShowImageADSImg').attr('src',imgUrl);
+    })
+
+    $('#SubmitADS').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var plan = button.data('plan');
+        var modal = $(this);
+        modal.find('#SubmitADSPlan').text('سفارش پلن ' + plan);
     })
 
 
@@ -314,3 +358,11 @@ $(document).ready(function () {
     })
 });
 
+// slide down show more button in menu
+$(document).ready(function(){
+    $("#ToggleSlideMenu").click(function(){
+    $("#slieMenu").slideToggle("slow");
+    $('#ToggleSlideMenu').toggleClass('flip-icon');
+    $('#ToggleSlideMenu .text').toggleClass('active');
+    });
+});

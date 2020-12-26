@@ -34,18 +34,19 @@ hr {
 }
 
 
-html , .search-page {
-    scrollbar-color: #585858 #EEEEEE;
+* {
+    scrollbar-color: #B7B7B7 #EEEEEE;
 }
-html::-webkit-scrollbar-track,
-.search-page::-webkit-scrollbar-track {
+
+*::-webkit-scrollbar-track {
     background: #EEEEEE;
 }
-html::-webkit-scrollbar-thumb,
-.search-page::-webkit-scrollbar-thumb {
-    background-color: #585858;
+
+*::-webkit-scrollbar-thumb {
+    background-color: #B7B7B7;
     border: 1px solid #EEEEEE;
 }
+
 
 .scrollbar {
     scrollbar-width: Thin;
@@ -70,7 +71,6 @@ html::-webkit-scrollbar-thumb,
 .song-lyric-content .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
     background: #FF3148 !important;
 }
-
 
 
 p, a, h1, h2, h3, h4, h5, h6, span, li, label {
@@ -360,4 +360,65 @@ input:checked+.slider:before {
 
 .pagination .page-item.disabled a {
     color: #a7a7a7;
+}
+
+
+.category-item {
+    background: #eeeeee;
+}
+
+
+
+
+.accordion .card-header {
+    background: #eee;
+}
+
+.accordion .card-header button {
+    color: #535456;
+}
+
+.accordion .card-body {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23EEEEEEFF' stroke-width='5' stroke-dasharray='6%2c6' stroke-dashoffset='20' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+
+.accordion .card-body img {
+    border: 2px solid #eee;
+}
+
+
+
+
+.table-ads .show-img {
+    background: #bbb;
+}
+.table-ads .show-img:hover {
+    color: #535456;
+}
+
+.table-ads .enable-ads .submit {
+    background: #bbb;
+}
+
+.table-ads .enable-ads .submit:hover {
+    color: #535456;
+}
+
+
+
+
+
+.modal input{
+    background-color: #eeeeee;
+    color: #242424;
+}
+
+.modal input:focus{
+    background-color: #eeeeee;
+    color: #242424;
+}
+
+
+.plan-item {
+    background: #eee;
 }
