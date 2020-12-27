@@ -111,6 +111,10 @@ $(document).ready(function(){
                 spaceBetween: 20,
             }
         },
+        navigation: {
+            nextEl: '.swiper-first-suggestion-next',
+            prevEl: '.swiper-first-suggestion-prev',
+        }
     });
     var swiper = new Swiper('.second-suggestion', {
         slidesPerView: 1,

@@ -48,6 +48,14 @@ hr {
 }
 
 
+.swiper-first-suggestion-next {
+    background-color: #eee;
+}
+
+.swiper-first-suggestion-prev {
+    background-color: #eee;
+}
+
 .scrollbar {
     scrollbar-width: Thin;
     scrollbar-color: #B7B7B7 #e5e5e5;
@@ -254,10 +262,6 @@ input:checked+.slider:before {
     color: #444444;
     background: none !important;
     pointer-events: none !important;
-}
-
-#preloader {
-    background: #fff !important;
 }
 
 
