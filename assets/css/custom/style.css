@@ -1131,6 +1131,143 @@ input[type=number]:focus,
     pointer-events: none !important;
 }
 
+
+
+
+.everlib-logo {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+.everlib-logo .everlib-logo-first-bar,
+.everlib-logo .everlib-logo-second-bar,
+.everlib-logo .everlib-logo-third-bar,
+.everlib-logo .everlib-logo-fourth-bar {
+    display: inline-block;
+    width: 8px;
+    border-radius: 50rem;
+    margin: 0px 4px;
+    padding: 0;
+    transition: 0.5s;
+    animation: equalize 4s 0s infinite;
+    animation-timing-function: linear;
+    vertical-align: top;
+    background: #2dc8e6;
+    background: linear-gradient(90deg, #2dc8e6 0%, #44d7b6 100%);
+}
+.everlib-logo .everlib-logo-first-bar {
+    height: 60px;
+    transition: 0.5s;
+    animation-delay: -1.9s;
+}
+.everlib-logo .everlib-logo-second-bar {
+    height: 40px;
+    animation-delay: -2.9s;
+}
+.everlib-logo .everlib-logo-third-bar {
+    height: 80px;
+    animation-delay: -3.9s;
+}
+.everlib-logo .everlib-logo-fourth-bar {
+    height: 20px;
+    animation-delay: -4.9s;
+}
+
+@keyframes equalize {
+    0% {
+    height: 80px;
+    }
+    4% {
+    height: 70px;
+    }
+    8% {
+    height: 60px;
+    }
+    12% {
+    height: 50px;
+    }
+    16% {
+    height: 40px;
+    }
+    20% {
+    height: 30px;
+    }
+    24% {
+    height: 40px;
+    }
+    28% {
+    height: 20px;
+    }
+    32% {
+    height: 40px;
+    }
+    36% {
+    height: 50px;
+    }
+    40% {
+    height: 30px;
+    }
+    44% {
+    height: 40px;
+    }
+    48% {
+    height: 50px;
+    }
+    52% {
+    height: 30px;
+    }
+    56% {
+    height: 10px;
+    }
+    60% {
+    height: 30px;
+    }
+    64% {
+    height: 50px;
+    }
+    68% {
+    height: 30px;
+    }
+    72% {
+    height: 50px;
+    }
+    76% {
+    height: 20px;
+    }
+    80% {
+    height: 50px;
+    }
+    84% {
+    height: 40px;
+    }
+    88% {
+    height: 50px;
+    }
+    92% {
+    height: 20px;
+    }
+    96% {
+    height: 60px;
+    }
+    100% {
+    height: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Preloader style */
 #preloader {
     position: fixed;
@@ -1145,6 +1282,10 @@ input[type=number]:focus,
     position: fixed;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -1467,6 +1608,20 @@ input[type=number]:focus,
     margin-left: auto;
     display: block;
 }
+
+
+.artist-name {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    transform: unset !important;
+}
+
+.artist-img {
+    opacity: 1 !important;
+}
+
+
 
 .accordion .card {
     background: transparent;
