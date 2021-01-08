@@ -881,7 +881,13 @@ a:hover {
 }
 
 .site-name-top-2 {
+    min-height: 19px;
     font-size: 16px;
+}
+
+.site-name-top-2 span {
+    font-size: 16px;
+    color: #2dc8e6;
 }
 
 .color-text {

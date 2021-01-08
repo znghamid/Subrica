@@ -68,7 +68,7 @@ $(document).ready(function(){
     });
     BackToTopButton.on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
+    $('html, body').animate({scrollTop:0}, 2500);
     });
     // End Scroll to top button
 
