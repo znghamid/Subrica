@@ -426,3 +426,9 @@ input:checked+.slider:before {
 .plan-item {
     background: #eee;
 }
+
+
+
+.page_404 img {
+    opacity: 1;
+}
